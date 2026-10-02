@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glaze &amp; Crave | Donas Artesanales Gourmet</title>
+<!-- Google Fonts: Epilogue & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;0,700;0,800;1,700&amp;family=Plus Jakarta Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#2f1500",
+            "surface-container-highest": "#e6e2dc",
+            "on-tertiary-fixed-variant": "#005137",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#f7f3ed",
+            "surface-variant": "#e6e2dc",
+            "on-primary-fixed": "#40000c",
+            "primary-fixed-dim": "#ffb3b6",
+            "secondary": "#904d00",
+            "inverse-surface": "#31302d",
+            "surface-dim": "#dddad4",
+            "tertiary": "#006848",
+            "on-tertiary": "#ffffff",
+            "primary-container": "#e11d48",
+            "surface": "#fdf9f3",
+            "surface-tint": "#be0037",
+            "secondary-fixed-dim": "#ffb77d",
+            "primary-fixed": "#ffdada",
+            "on-secondary-fixed-variant": "#6e3900",
+            "surface-container-high": "#ebe8e2",
+            "surface-bright": "#fdf9f3",
+            "on-error-container": "#93000a",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f4f0ea",
+            "tertiary-fixed-dim": "#68dba9",
+            "on-background": "#1c1c18",
+            "on-surface": "#1c1c18",
+            "on-secondary-container": "#663500",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#00845c",
+            "outline-variant": "#e5bdbe",
+            "on-tertiary-container": "#eefff3",
+            "primary": "#b80035",
+            "tertiary-fixed": "#85f8c4",
+            "surface-container": "#f1ede7",
+            "on-tertiary-fixed": "#002114",
+            "inverse-primary": "#ffb3b6",
+            "secondary-fixed": "#ffdcc3",
+            "on-primary-fixed-variant": "#920028",
+            "secondary-container": "#fe932c",
+            "on-surface-variant": "#5c3f40",
+            "on-primary": "#ffffff",
+            "background": "#fdf9f3",
+            "on-primary-container": "#fffaf9",
+            "outline": "#906f70",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Epilogue"],
+            "headline-sm": ["Epilogue"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Epilogue"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg": ["Epilogue"],
+            "label-md": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Epilogue"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "title-lg": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Epilogue"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .shadow-warm-sm {
+      box-shadow: 0 4px 16px -2px rgba(41, 21, 11, 0.06), 0 2px 6px -1px rgba(225, 29, 72, 0.04);
+    }
+    .shadow-warm-md {
+      box-shadow: 0 12px 28px -4px rgba(41, 21, 11, 0.09), 0 4px 12px -2px rgba(225, 29, 72, 0.08);
+    }
+    .glaze-sheen {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen pb-28 selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Promo Top Ticker -->
+<aside class="bg-primary text-on-primary py-2 px-space-md text-center text-label-md font-label-md tracking-wide flex items-center justify-center gap-2">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>🔥 Horneadas cada 3 horas · Envíos calientitas a domicilio</span>
+</aside>
+<!-- TopAppBar Component (from JSON specs) -->
+<header class="docked full-width top-0 sticky z-40 bg-surface/95 dark:bg-surface/95 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-space-md py-space-sm max-w-screen-md mx-auto">
+<div class="flex items-center gap-2">
+<button aria-label="Menu principal" class="w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-inverse-primary hover:bg-surface-container-high transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined" data-icon="bakery_dining">bakery_dining</span>
+</button>
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary-container tracking-tight">Glaze &amp; Crave</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-1.5">
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors active:scale-95 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary" data-icon="storefront">storefront</span>
+<span class="text-label-md font-label-md hidden sm:inline">Roma Norte</span>
+</button>
+<button aria-label="Bolsa de compra" class="relative w-10 h-10 rounded-full flex items-center justify-center text-primary dark:text-inverse-primary hover:bg-surface-container-high transition-colors duration-150 active:scale-95">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute top-1.5 right-1.5 w-4 h-4 bg-primary-container text-on-primary-container text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">3</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-screen-md mx-auto px-space-md pt-space-md space-y-space-xl">
+<!-- Hero Section -->
+<section class="relative bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-warm-sm overflow-hidden border border-outline-variant/30">
+<div class="relative z-10 flex flex-col items-start gap-3">
+<!-- Pill Tag -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Brioche 100% Hecha a Mano
+        </div>
+<h1 class="text-display-lg-mobile md:text-headline-lg font-display-lg-mobile md:font-headline-lg text-on-surface tracking-tight text-balance">
+          Donas artesanales con sabor a <span class="text-primary-container italic font-normal">felicidad pura</span>
+</h1>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-lg">
+          Masa brioche con 24h de fermentación lenta, glaseados naturales e ingredientes premium traídos de pequeños productores locales.
+        </p>
+<!-- Hero Image (Provided Asset) -->
+<div class="w-full my-3 rounded-lg overflow-hidden relative shadow-warm-md group">
+<img alt="Selección gourmet de donas artesanales Glaze &amp; Crave" class="w-full h-64 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjmTZVQq_ICEJRdNNFm-NZuNIWkwqTgowsyrTbg-Yx9cR94QJhKSBMH2qMD404Rvod7khXt1LD9PJ4EO46ujVJyQcBs3HPcYFbziYgJqcvmH3hVtPX5dJVpntlq8-G80dsX8G1JiyaMH__sYfVeI7sHMVaRKJXRgqPPLiYfBxbnqQHCkFjNd4cxK28h-_GsL-EWjrseipS3AW5wKZ261rRJYn4B3xooGUJ_Ak01-VVJkaTmFDtzvmrRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md text-on-surface">Box Gourmet de Temporada</span>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="w-full flex flex-col sm:flex-row gap-3 pt-1">
+<button class="w-full sm:w-auto flex-1 bg-primary-container text-on-primary-container font-label-lg text-label-lg py-3.5 px-6 rounded-full shadow-warm-sm hover:shadow-warm-md hover:bg-primary transition-all duration-200 active:scale-[0.97] flex items-center justify-center gap-2 glaze-sheen">
+<span>Pedir Ahora (Envío Gratis)</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg py-3.5 px-6 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/40 transition-colors active:scale-[0.97]" href="#sabores">
+            Ver Sabores del Día
+          </a>
+</div>
+<!-- Trust Badges Row -->
+<div class="w-full pt-3 border-t border-outline-variant/30 flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>+15k donas entregadas</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9/5</span>
+<span class="hidden xs:inline">(850+ reseñas)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Sabores Estrella de Hoy -->
+<section class="space-y-4" id="sabores">
+<div class="flex items-end justify-between">
+<div>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-primary font-bold">Vitrina Matutina</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Sabores Estrella de Hoy</h2>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant hidden sm:block">4 de 12 creaciones</span>
+</div>
+<!-- Bento Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Donut Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between hover:shadow-warm-md transition-all duration-200">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="bg-primary-fixed text-primary px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase">🍓 Bestseller</span>
+<span class="text-title-lg font-title-lg text-primary">$3.50</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-surface-container-low flex items-center justify-center relative overflow-hidden mb-3">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300" data-alt="Close up artisanal donut glazed with bright wild strawberry pink glaze and topped with rainbow sprinkles and a sliced fresh strawberry on a neutral cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcAkq6pFir-reb8iY53BM17PVeeMqBPfc92y627ld5NoHS4q5Da7J3guUfQdWizyxyR_fvo24pho6NUzYZA-RvwDn8ATcM_0WkjVgYwirvqLfDzhQ-m95SEyGcpF5U_EWhSoqixRurxNpqgCCRyUq1cjRD_DCD_1FDHqh87dY54VXjusgP2MuykwKHKHwQXLMxKxeMuNpOes4w1CgFOYYvRF8rd48bozBN28pimZWGsg8muojAC4uKfw"/>
+<span class="absolute bottom-2 left-2 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">280 kcal</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Fresa Silvestre &amp; Chispas</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Glaseado casero de fresas naturales con chispas de azúcar rubio y fresa fresca en rodaja.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+              Recién glaseada
+            </span>
+<button aria-label="Agregar Fresa Silvestre" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</article>
+<!-- Donut Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between hover:shadow-warm-md transition-all duration-200">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="bg-surface-container-high text-on-surface-variant px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase">🍫 Intenso</span>
+<span class="text-title-lg font-title-lg text-primary">$3.80</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-surface-container-low flex items-center justify-center relative overflow-hidden mb-3">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Decadent gourmet donut coated in rich dark Belgian chocolate ganache with creamy white chocolate drizzle and curls of delicate shaved dark chocolate flakes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChwm-PQ8SdJfkMW5KCq-m7zXWCduR1S7KqQhyBmx83gf5yaWBmdlgBFn21B5D5gctn1t9vkOXSww7TLat9KluDMAN_jfCbj-DVk5gMgcPTomiRJp4RHfCAv4N6sFx9qSd7ybRsoOlCCxUCM2orf_lQBjpHdQtNuEjyS74tjsFxQ9w5ZfUO7mb9nSzhdg4IFRrvCSk4YTh_DFgBiFO5t58hoPFL3UiW6XgtIvYZ61i91YvYan3z8mMpow"/>
+<span class="absolute bottom-2 left-2 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">340 kcal</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Doble Chocolate Belga</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Ganache sedosa al 70% cacao amargo con virutas crujientes y espiral de chocolate blanco.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="cookie">cookie</span>
+              Cacao de origen
+            </span>
+<button aria-label="Agregar Chocolate Belga" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</article>
+<!-- Donut Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between hover:shadow-warm-md transition-all duration-200">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase">🌰 Favorito del Chef</span>
+<span class="text-title-lg font-title-lg text-primary">$4.00</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-surface-container-low flex items-center justify-center relative overflow-hidden mb-3">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Artisanal brioche donut with creamy caramel frosting generously drizzled with warm sea salt butterscotch and crowned with toasted pecan halves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlIyea-dl3aPFUJ9nfBEu1LHU8bD4aB05MQRzkntJFNvaN6jhi2Oqs_OxMPnlJdX4UrWAvuOvSA-f8SnLbZy91ehpvnyR_ypC3OJKxnXrAkMEEZUi6Lve4k9ldX9lvA1kYMopl57NXESKcrKoomWLBED2jWj5yKcKcrpoMMZy4EpEOmMUSiR8OISFqPJgayt23qxZQvVC11Yd8Bk9xiYI1v8yJJQIF74RJxZcLbvUL8oUdWGkFxcGMag"/>
+<span class="absolute bottom-2 left-2 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">310 kcal</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Caramelo Salado &amp; Nuez Pecana</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Salsa de caramelo con mantequilla avellanada, flor de sal de Colima y nueces tostadas.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-secondary-container flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="award_star" style="font-variation-settings: 'FILL' 1;">award_star</span>
+              Premio Pastelero 2024
+            </span>
+<button aria-label="Agregar Caramelo Salado" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</article>
+<!-- Donut Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between hover:shadow-warm-md transition-all duration-200">
+<div>
+<div class="flex justify-between items-start mb-3">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase">🫐 Edición Limitada</span>
+<span class="text-title-lg font-title-lg text-primary">$4.20</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-surface-container-low flex items-center justify-center relative overflow-hidden mb-3">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Gourmet filled donut topped with glossy wild raspberry glaze, an elegant rosette of whipped Sicilian pistachio cream and fresh whole raspberries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUJTMQ5T28Qy00ijebkLKpcdohqarL0UgRgx88dsFl6Q_ub9_q6Nd6Lo7IGdR4ZmcF6Zn-YcbddlzTPes0qYPBmnOOjfhjvJI9wKXHGTEy5fuh1JL0tooaXE2qF7Vx0xuUtjzQIR-2Kd6I85WZTiHXAx5LI6kLwAeZUT4C-58QZF-KHy7fMKKZr8vHmovtN96qpRHFYIJP-MEHQnkkfobHogX7ESebOWjE7O-LtgLo8U1Bvhe-ekqAg"/>
+<span class="absolute bottom-2 left-2 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">295 kcal</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Frambuesa &amp; Crema Pistacho</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Glaseado de rubí silvestre, rosetón de crema montada de pistacho de Sicilia y fruta viva.</p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="text-body-sm font-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+              Últimas 18 disponibles
+            </span>
+<button aria-label="Agregar Frambuesa y Pistacho" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Arma tu Caja Feliz (Specialty Box Builder Highlight) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-warm-md border-2 border-primary/20 relative overflow-hidden">
+<!-- Glow background accent -->
+<div class="absolute -right-16 -top-16 w-52 h-52 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+<div class="space-y-2 max-w-md">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-sm" data-icon="percent" style="font-variation-settings: 'FILL' 1;">percent</span>
+            Ahorra 20% en Cajas Mixtas
+          </div>
+<h2 class="text-headline-md font-headline-md text-on-surface">Arma tu Caja Feliz</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            Combina tus glaseados y rellenos favoritos en un empaque diseñado para regalo con lazo de tela y tarjeta personalizada.
+          </p>
+<!-- Box Size Selector Pills -->
+<div class="pt-2 flex flex-wrap gap-2.5">
+<label class="cursor-pointer">
+<input class="sr-only peer" name="box-size" type="radio" value="4"/>
+<div class="px-4 py-2 rounded-full border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-fixed peer-checked:text-primary transition-all text-label-md font-label-md">
+                Box x4 Donas
+              </div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only peer" name="box-size" type="radio" value="6"/>
+<div class="px-4 py-2 rounded-full border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-fixed peer-checked:text-primary transition-all text-label-md font-label-md flex items-center gap-1">
+<span>Box x6 Donas</span>
+<span class="text-[10px] bg-primary text-on-primary rounded-full px-1.5 py-0.2">Popular</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only peer" name="box-size" type="radio" value="12"/>
+<div class="px-4 py-2 rounded-full border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-fixed peer-checked:text-primary transition-all text-label-md font-label-md">
+                Fiesta x12 Donas
+              </div>
+</label>
+</div>
+</div>
+<!-- Box Visual Slot Mockup -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col items-center justify-center gap-3 border border-dashed border-outline/30">
+<div class="grid grid-cols-3 gap-2">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary">🍓</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary">🍫</div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed/50 flex items-center justify-center text-tertiary">🫐</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-dashed border-primary flex items-center justify-center text-primary animate-pulse">+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-dashed border-outline-variant flex items-center justify-center text-outline text-xs">Slot</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high border-2 border-dashed border-outline-variant flex items-center justify-center text-outline text-xs">Slot</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-2.5 px-4 rounded-full shadow-warm-sm hover:bg-primary transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+            Personalizar Caja Ahora
+          </button>
+</div>
+</div>
+</section>
+<!-- Por qué nuestras donas son irresistibles (3 Pilares) -->
+<section class="space-y-4">
+<div class="text-center max-w-sm mx-auto">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-primary font-bold">El Secreto de la Masa</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">¿Por qué son tan irresistibles?</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<!-- Pilar 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-warm-sm border border-outline-variant/20 flex flex-col items-start gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Masa 100% Brioche</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Fermentación paciente durante 24 horas y mantequilla francesa pura para una textura esponjosa y ligera como nube.
+          </p>
+</div>
+<!-- Pilar 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-warm-sm border border-outline-variant/20 flex flex-col items-start gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="nutrition">nutrition</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Fruta Real &amp; Pura</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Nuestros glaseados llevan pulpas reducidas al fuego lento, sin jarabes de maíz ni saborizantes artificiales.
+          </p>
+</div>
+<!-- Pilar 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-warm-sm border border-outline-variant/20 flex flex-col items-start gap-2.5">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface">Cero Conservantes</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Horneamos en 4 tandas al día para asegurarte donas tiernas, tibias y con brillo auténtico siempre.
+          </p>
+</div>
+</div>
+</section>
+<!-- Social Proof / Reseñas -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-primary font-bold">Comunidad Foodie</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Lo que dicen los amantes del dulce</h2>
+</div>
+<div class="flex items-center gap-1 text-secondary text-sm">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">4.9 / 5</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-warm-sm border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-sm">
+              VG
+            </div>
+<div>
+<h3 class="text-title-md font-title-md text-on-surface leading-tight">Valeria Gómez</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Cliente verificada · Roma Norte</p>
+</div>
+<div class="ml-auto flex text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "La de pistacho y frambuesa es de otro planeta. La masa es tan suave que casi no se siente pesada. ¡Pedí la caja de 6 para la oficina y volaron en 5 minutos!"
+          </p>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-warm-sm border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold text-sm">
+              MR
+            </div>
+<div>
+<h3 class="text-title-md font-title-md text-on-surface leading-tight">Mateo Rivera</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Food Blogger · Condesa</p>
+</div>
+<div class="ml-auto flex text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+            "Por fin un lugar que respeta la fermentación brioche real. El balance entre el glaseado crocante y el centro esponjoso es simplemente perfecto."
+          </p>
+</div>
+</div>
+</section>
+<!-- Banner Final de Cumpleaños / Suscripción -->
+<section class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl p-space-md sm:p-space-lg shadow-warm-md text-center space-y-3 relative overflow-hidden">
+<div class="max-w-md mx-auto relative z-10 space-y-2">
+<span class="material-symbols-outlined text-4xl text-secondary-container" data-icon="cake">cake</span>
+<h2 class="text-headline-md font-headline-md text-on-primary">¿Cumples años este mes?</h2>
+<p class="text-body-sm font-body-sm text-on-primary/90">
+          Regístrate gratis a nuestro Club Glaze y te enviamos una dona especial de cumpleaños en tu próxima orden + 15% de descuento.
+        </p>
+<form class="flex flex-col sm:flex-row gap-2 pt-2" onsubmit="event.preventDefault(); alert('¡Bienvenido al Club Glaze! Revisa tu correo con tu dona de bienvenida.');">
+<input class="flex-1 px-4 py-3 rounded-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 text-body-md border-0 focus:ring-2 focus:ring-secondary-container" placeholder="Tu correo electrónico" required="" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md py-3 px-6 rounded-full font-bold hover:bg-secondary transition-colors shadow-sm active:scale-95" type="submit">
+            Quiero mi Dona Gratis
+          </button>
+</form>
+</div>
+</section>
+<!-- Footer info sutil -->
+<footer class="text-center text-body-sm font-body-sm text-on-surface-variant py-4 space-y-1">
+<p>© 2024 Glaze &amp; Crave Artisanal Bakery Co. · Hecho con amor y masa madre.</p>
+<p class="text-label-sm font-label-sm">CDMX: Roma Norte · Condesa · Polanco · Del Valle</p>
+</footer>
+</main>
+<!-- BottomNavBar Component (from JSON specs) -->
+<nav class="docked full-width bottom-0 rounded-t-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-md py-space-sm pb-6 bg-surface-container-lowest/95 dark:bg-surface-container/95 backdrop-blur-lg shadow-[0_-4px_16px_-2px_rgba(41,21,11,0.06)] dark:shadow-none">
+<!-- Item 1: Menu (Active Destination based on page intent) -->
+<button class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1.5 shadow-sm active:scale-[0.97] transition-transform duration-150">
+<span class="material-symbols-outlined text-[20px]" data-icon="cookie" style="font-variation-settings: 'FILL' 1;">cookie</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider mt-0.5">Menu</span>
+</button>
+<!-- Item 2: Build Box -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-container transition-colors duration-150 active:scale-[0.97]">
+<span class="material-symbols-outlined text-[20px]" data-icon="inventory_2">inventory_2</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider mt-0.5">Build Box</span>
+</button>
+<!-- Item 3: Locations -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-container transition-colors duration-150 active:scale-[0.97]">
+<span class="material-symbols-outlined text-[20px]" data-icon="storefront">storefront</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider mt-0.5">Locations</span>
+</button>
+<!-- Item 4: Bag -->
+<button class="relative flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-3 py-1.5 hover:text-primary dark:hover:text-primary-container transition-colors duration-150 active:scale-[0.97]">
+<div class="relative">
+<span class="material-symbols-outlined text-[20px]" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-2 w-3.5 h-3.5 bg-primary-container text-on-primary text-[9px] font-bold rounded-full flex items-center justify-center">3</span>
+</div>
+<span class="text-label-sm font-label-sm uppercase tracking-wider mt-0.5">Bag</span>
+</button>
+</nav>
+</body></html>
